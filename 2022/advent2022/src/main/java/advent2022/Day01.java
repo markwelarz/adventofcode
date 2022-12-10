@@ -18,10 +18,6 @@ public class Day01
 
 	public int part2(CharSource input) throws IOException
 	{
-		var fff = read(input).stream()
-				.sorted(Comparator.<Integer>naturalOrder().reversed())
-				.toList();
-
 		return read(input).stream()
 				.sorted(Comparator.<Integer>naturalOrder().reversed())
 				.limit(3)
